@@ -10,7 +10,7 @@
 		navigation: {
 			nextEl: ".js-team-next",
 			prevEl: ".js-team-prev",
-			disabledClass: "nav-btn--disabled"
+			disabledClass: "team__swiper-btn--disabled"
 		},
 
 		breakpoints: {
@@ -23,7 +23,7 @@
 			1280: {
 				slidesPerView: 3,
 				slidesPerGroup: 3,
-				spaceBetween: 30
+				spaceBetween: 80
 			}
 		},
 

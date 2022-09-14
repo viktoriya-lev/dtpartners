@@ -16,19 +16,42 @@
 
 	<script src="js/swiper.min.js" defer></script>
 	<script src="js/team.js" defer></script>
+	<script src="js/scroll.js" defer></script>
 </head>
 
 <body>
 	<header class="header">
 		<div class="container">
-			<a class="header__logo">
-				<img class="logo" src="img/icons/logo-1.svg" alt="Логотип DT Partners">
-			</a>
+			<div class="header__wrapper">
+				<a class="header__logo">
+					<img class="logo" src="img/icons/logo-1.svg" alt="Логотип DT Partners">
+				</a>
+
+				<nav class="nav">
+					<ul class="nav__list reset-list">
+						<li class="nav__item">
+							<a class="nav__link link js-scroll-link" href="#hero">О нас</a>
+						</li>
+						<li class="nav__item">
+							<a class="nav__link link js-scroll-link" href="#values">Наши ценности</a>
+						</li>
+						<li class="nav__item">
+							<a class="nav__link link js-scroll-link" href="#services">Услуги</a>
+						</li>
+						<li class="nav__item">
+							<a class="nav__link link js-scroll-link" href="#team">Команда</a>
+						</li>
+						<li class="nav__item">
+							<a class="nav__link link js-scroll-link" href="#contacts">Контакты</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
 		</div>
 	</header>
 
 	<main class="main">
-		<section class="hero">
+		<section class="hero" id="hero">
 			<div class="container">
 				<div class="hero__blocks">
 					<div class="hero__left">
@@ -44,7 +67,7 @@
 			</div>
 		</section>
 
-		<section class="values">
+		<section class="values" id="values">
 			<div class="container">
 				<h2 class="values__title title title--main">Наши ценности</h2>
 				<div class="values__blocks">
@@ -82,7 +105,7 @@
 			</div>
 		</section>
 
-		<section class="services">
+		<section class="services" id="services">
 			<div class="container">
 				<h2 class="services__title title title--main">Услуги</h2>
 				<div class="services__blocks">
@@ -132,40 +155,37 @@
 			</div>
 		</section>
 
-		<section class="team">
+		<section class="team" id="team">
 			<div class="container">
 				<h2 class="team__title title title--main">Команда</h2>
 
 				<div class="team__swiper">
-					<div class="team__swiper-nav">
-						<button class="nav-btn nav-btn__prev team__swiper-prev js-team-prev" aria-label="К предыдущему слайду"></button>
-						<button class="nav-btn nav-btn__next team__swiper-next js-team-next" aria-label="К следующему слайду"></button>
-					</div>
+					<button class="team__swiper-btn team__swiper-prev js-team-prev" aria-label="К предыдущему слайду"></button>
 					<div class="swiper-container team__swiper-container js-team-swiper">
 						<div class="swiper-wrapper">
 							<div class="swiper-slide team__swiper-slide" href="#">
-								<img src="img/team/OksanaB.jpeg" alt="">
+								<img class="team__swiper-img" src="img/team/OksanaB.jpeg" alt="">
 								<h3 class="team__swiper-header title title--second">Баранова Оксана Сергеевна</h3>
 								<p class="team__swiper-descr">
 									Банкротство
 								</p>
 							</div>
 							<div class="swiper-slide team__swiper-slide" href="#">
-								<img src="img/team/NikitaD.jpeg" alt="">
+								<img class="team__swiper-img" src="img/team/NikitaD.jpeg" alt="">
 								<h3 class="team__swiper-header title title--second">Давидович Никита Витальевич</h3>
 								<p class="team__swiper-descr">
 									Банкротство
 								</p>
 							</div>
 							<div class="swiper-slide team__swiper-slide" href="#">
-								<img src="img/team/OlgaT.jpeg" alt="">
+								<img class="team__swiper-img" src="img/team/OlgaT.jpeg" alt="">
 								<h3 class="team__swiper-header title title--second">Терникова Ольга Михайловна</h3>
 								<p class="team__swiper-descr">
 									Банкротство
 								</p>
 							</div>
 							<div class="swiper-slide team__swiper-slide" href="#">
-								<img src="img/team/OlgaT.jpeg" alt="">
+								<img class="team__swiper-img" src="img/team/OlgaT.jpeg" alt="">
 								<h3 class="team__swiper-header title title--second">Терникова Ольга Михайловна</h3>
 								<p class="team__swiper-descr">
 									Банкротство
@@ -173,22 +193,23 @@
 							</div>
 						</div>
 					</div>
+					<button class="team__swiper-btn team__swiper-next js-team-next" aria-label="К следующему слайду"></button>
 				</div>
 			</div>
 		</section>
 
-		<section class="contacts">
+		<section class="contacts" id="contacts">
 			<div class="container">
 				<h2 class="contacts__title title title--main">Давайте оставаться на связи</h2>
 
 				<ul class="contacts__list reset-list">
 					<li class="contacts__item">
 						<h2 class="contacts__item-header title title--second">Телефон</h2>
-						<a class="contacts__link" href="tel:+79640444346">+7 (964) 044-43-46</a>
+						<a class="contacts__link link" href="tel:+79640444346">+7 (964) 044-43-46</a>
 					</li>
 					<li class="contacts__item">
 						<h2 class="contacts__item-header title title--second">Элетронная почта</h2>
-						<a class="contacts__link" href="mailto:info@dt.partners">info@dt.partners</a>
+						<a class="contacts__link link" href="mailto:info@dt.partners">info@dt.partners</a>
 					</li>
 					<li class="contacts__item">
 						<h2 class="contacts__item-header title title--second">Адрес</h2>
