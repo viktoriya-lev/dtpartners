@@ -621,8 +621,6 @@ svg {
 	}
 }
 
-@media (max-width: 420px) {}
-
 
 /* ==================================== TEAM ==================================== */
 
@@ -697,6 +695,10 @@ svg {
 
 .team__swiper-header {
 	margin-bottom: 20px;
+}
+
+.team__swiper-descr {
+	display: block;
 }
 
 @media (max-width: 1219px) {
